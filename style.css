@@ -1,0 +1,104 @@
+/* variables */
+
+:root {
+	/* colors */
+	--white: hsl(0, 0%, 100%);
+	--light-gray: hsl(212, 45%, 89%);
+	--grayish-blue: hsl(220, 15%, 55%);
+	--dark-blue: hsl(218, 44%, 22%);
+	--card-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+
+	/* fonts */
+	--outfit: "Outfit", sans-serif;
+
+	/* font sizes */
+	--base: 15px;
+	--lg: 22px;
+}
+
+/* css resets */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: var(--outfit);
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	background: var(--light-gray);
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* main css */
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.qr-card {
+	border-radius: 20px;
+	padding: 16px;
+	background: var(--white);
+	box-shadow: var(--card-shadow);
+	width: 320px;
+	height: 497px;
+}
+
+.qr-image {
+	border-radius: 10px;
+}
+
+.qr-heading {
+	text-align: center;
+	font-size: var(--lg);
+	margin-top: 24px;
+	font-weight: 700;
+}
+.qr-paragraph {
+	font-size: var(--base);
+	color: var(--grayish-blue);
+	text-align: center;
+
+	font-weight: 400;
+	width: 256px;
+	margin: 16px auto auto;
+}
+
+.attribution {
+	position: absolute;
+	bottom: 20px;
+}
